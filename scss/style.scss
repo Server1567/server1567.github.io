@@ -1,0 +1,80 @@
+/*
+ * Author: Junior Jimenez - Server1567
+ * Author URL: https://server1567.com (PENDING)
+ * Description: This is my Website Portfolio, you can hire me anytime.
+*/
+
+$raleway: 'Raleway', sans-serif;
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+	background: url("../res/bg.png");
+
+    // Create the parallax scrolling effect
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// ************************************************
+// Estilos para la parte de la Bienvenida - Welcome
+// ************************************************
+
+#welcome {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 125px 0px auto;
+
+
+	.welcome {
+		margin: 5px auto;
+	}
+
+	.logo {
+		margin: auto;
+		width: 15%;
+	}
+
+	h3 {
+		padding-top: 10px;
+	}
+
+	span {
+		font-size: 18px;
+	}
+
+	.pais {
+		margin-right: 10px;
+		top: 2px;
+		position: relative;
+	}
+
+	span.frontend {
+		font-size: 16px;
+		color: lighten(#000000, 20);
+	}
+
+	.boton-welcome {
+		color: white;
+		margin-top: 10px;
+		border: 1.8px solid white;
+		font-family: $raleway;
+		font-weight: 300;
+
+		&:hover {
+			border: 1.8px solid lightgreen;
+			font-weight: normal;
+		}
+	}
+}
+
+// ************************************************
+// ************** Estilos la Web ******************
+// ************************************************
+
+
