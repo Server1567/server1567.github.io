@@ -6,12 +6,16 @@
 
 $raleway: 'Raleway', sans-serif;
 
+#bg_init {
+	background: url("../res/bg.png") !important;
+}
+
 body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
 
-	background: url("../res/bg.png");
+	background: #f0f0f0;
 
     // Create the parallax scrolling effect
     background-attachment: fixed;

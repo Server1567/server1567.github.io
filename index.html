@@ -12,10 +12,11 @@
 
 	<link rel="stylesheet" href="css/materialize.min.css">
 	<link rel="stylesheet" href="fonts/material-icons.css">
+	<link rel="stylesheet" href="js/fullPageJS/jquery.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut icon" href="https://server1567.herokuapp.com/img/favicon.ico">
 </head>
-<body>
+<body id="bg_init" class="fp-responsive">
 	
 <!-- Welcome to my Website -->
 
@@ -24,17 +25,33 @@
 	<h3 class="welcome">Junior Jimenez</h3>
 	<span class="welcome frontend">Front-End Developer</span>
 	<span class="welcome"><img src="res/bandera.png" alt="bandera" class="pais">República Dominicana</span>
-	<button class="btn transparent z-depth-0 boton-welcome" onclick="run()">let's go</button>
+	<button class="btn transparent z-depth-0 boton-welcome" id="letsgo">let's go</button>
 </div>
 
 <!-- WEBSITE -->
 
 <!-- Here I'll type anything more later... Not now. :7 -->
 
+<div id="fullpage" class="hide">
+	<div class="section">
+		
+	</div>
+	<div class="section">
+		
+	</div>
+	<div class="section">
+		
+	</div>
+</div>
+
 <!-- SCRIPTS -->
 
 <script src="js/jquery.min.js"></script>
 <script src="js/materialize.min.js"></script>
 <script src="js/init.js"></script>
+<!-- Uso de la Librería fullPage.JS -->
+<script src="vendors/jquery.easings.min.js"></script>
+<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+<script src="js/fullPageJS/jquery.fullPage.min.js"></script>
 </body>
 </html>
