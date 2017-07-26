@@ -14,6 +14,12 @@ $raleway: 'Raleway', sans-serif;
 	padding-bottom: 25px;
 }
 
+@mixin flexbox($xy, $select){
+	display: flex;
+	flex-direction: $xy;
+	justify-content: $select;
+}
+
 #bg_init {
 	background: url("../res/bg.png") !important;
 }
@@ -32,62 +38,15 @@ body {
     background-size: cover;
 }
 
-// ************************************************
+// *************************************************
 // Estilos para la parte de la Bienvenida - Welcome
-// ************************************************
+// *************************************************
 
-#welcome {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 125px 0px auto;
+@import 'welcome';
 
-
-	.welcome {
-		margin: 5px auto;
-	}
-
-	.logo {
-		margin: auto;
-		width: 15%;
-	}
-
-	h3 {
-		padding-top: 10px;
-	}
-
-	span {
-		font-size: 18px;
-	}
-
-	.pais {
-		margin-right: 10px;
-		top: 2px;
-		position: relative;
-	}
-
-	span.frontend {
-		font-size: 16px;
-		color: lighten(#000000, 20);
-	}
-
-	.boton-welcome {
-		color: white;
-		margin-top: 10px;
-		border: 1.8px solid white;
-		font-family: $raleway;
-		font-weight: 300;
-
-		&:hover {
-			border: 1.8px solid lightgreen;
-			font-weight: normal;
-		}
-	}
-}
-
-// ************************************************
-// ************** Estilos la Web ******************
-// ************************************************
+// *************************************************
+// ************** Estilos la Web *******************
+// *************************************************
 
 #fullpage {
 
@@ -98,13 +57,26 @@ body {
 
 	#first {
 
+		.responsive-image {
+			width: 50%;
+			padding: 50px;
+			float: left;
+			@include flexbox(column, center);
+			align-items: center;
+			height: 100%;
+
+			.responsive {
+				@include caption_all;
+				width: 500px;
+				align-self: center;
+			}
+		}
+
 		.me {
 			width: 50%;
 			padding: 50px;
-			display: flex;
-			flex-direction: column;
+			@include flexbox(column, center); 
 			float: right;
-			justify-content: center; 
 
 			.logo_me {
 				@include caption_all;
@@ -117,19 +89,21 @@ body {
 				@include caption_all;
 				font-family: $raleway;
 				font-weight: 300;
+				text-align: center;
 			}
 
 			.description_me {
 				@include caption_all;
 				font-family: $raleway;
 				font-weight: 300;
+				text-align: center;
 			}
 
 			.skills_me {
 				@include caption_all;
 				font-family: $raleway;
 				font-weight: bold;
-				text-align: center;
+				margin: auto;
 			}
 
 			.btn {
@@ -137,6 +111,37 @@ body {
 				width: 30%;
 				align-self: center;
 				color: black;
+				border: 1.5px solid black !important;
+
+				&:hover {
+					color: #3E3E3EFF;
+					border: 1.5px solid #3E3E3EFF !important;
+				}
+			}
+
+			.icon-container {
+				@include caption_all;
+
+				.icon-container-1 {
+					@include flexbox(row, center);
+					width: 100%;
+
+					.html5, .css3, .js, .sass {
+						width: 50px;
+						border-radius: 50%;
+					}
+				}
+
+				.icon-container-2 {
+					@include flexbox(row, center);
+					width: 100%;
+
+					.bootstrap, .materialize, .git {
+						width: 50px;
+						border-radius: 50%;
+						margin: 5px 0px 0px 10px;
+					}
+				}
 			}
 		}
 	}
@@ -146,4 +151,16 @@ body {
 		height: 100%;
 		position: absolute;
 	}
+}
+
+// *************************************************
+// ************** Media Queries *******************
+// *************************************************
+
+@media screen and (max-width: 992px) {
+
+	.me {
+		width: 100%;
+	}
+	
 }
