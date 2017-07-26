@@ -25,7 +25,7 @@
 	<h3 class="welcome">Junior Jimenez</h3>
 	<span class="welcome frontend">Front-End Developer</span>
 	<span class="welcome"><img src="res/bandera.png" alt="bandera" class="pais">República Dominicana</span>
-	<button class="btn transparent z-depth-0 boton-welcome" id="letsgo">let's go</button>
+	<button class="btn-floating waves-effect waves-dark btn-large pulse" id="letsgo"><i class="material-icons">home</i></button>
 </div>
 
 <!-- WEBSITE -->
@@ -35,13 +35,14 @@
 <div id="fullpage" class="hide">
 	<div class="section" id="first">
 		<img data-src="res/image1.jpg" alt="Image" class="responsive-img principal">
-		<div style="height: 100%;">
-			<div class="responsive-image hide-on-med-and-down">
+		<div style="height: 100%;" class="row">
+			<div class="responsive-image hide-on-small-only col m6">
 				<img src="res/responsive.svg" alt="responsive-Image" class="responsive-img responsive">
 			</div>
-			<div class="me">
-				<img src="res/picture.jpg" class="responsive-img circle logo_me hide-on-med-and-down">
-				<h2 class="name_me">Junior Jimenez</h2>
+			<div class="me col s12 m6">
+				<img src="res/picture.jpg" class="responsive-img circle logo_me hide-on-med-and-down tooltipped" data-position="left" data-delay="50" data-tooltip="My Logo">
+				<h2 class="name_me hide-on-small-only">Junior Jimenez</h2>
+				<h3 class="name_me hide-on-med-and-up">Junior Jimenez</h3>
 				<p class="description_me">
 					Hola, Soy un Front-End Developer de 16 años con ganas de crecer sus habilidades uniéndose a grandes proyectos, actualmente resido en República Dominicana y si tu proyecto es interesante no dudes en contactarme.
 				</p>
@@ -63,8 +64,6 @@
 						<img src="res/iconbrand/git.png" alt="GIT" class="responsive-img git tooltipped" data-position="right" data-delay="50" data-tooltip="Git & GitHub">
 					</div>
 				</div>
-
-				<!-- <img src="http://materializecss.com/res/materialize.svg" alt="materialize"> -->
 
 				<button class="btn z-depth-0 transparent" onclick="fail()">Hire me</button>
 			</div>

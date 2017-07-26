@@ -37,16 +37,7 @@
 		color: lighten(#000000, 20);
 	}
 
-	.boton-welcome {
-		color: white;
+	#letsgo {
 		margin-top: 10px;
-		border: 1.8px solid white;
-		font-family: $raleway;
-		font-weight: 300;
-
-		&:hover {
-			border: 1.8px solid lightgreen;
-			font-weight: normal;
-		}
 	}
 }
