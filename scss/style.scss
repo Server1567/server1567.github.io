@@ -20,13 +20,40 @@ $raleway: 'Raleway', sans-serif;
 	justify-content: $select;
 }
 
-#bg_init {
-	background: url("../res/bg.png") !important;
+@mixin skills_metrics {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
 }
 
+@mixin ipad {
+	@media (max-width: 1024px) {
+		@content
+	}
+}
+
+@mixin tablet {
+	@media (max-width: 865px) {
+		@content
+	}
+}
+
+@mixin mobile {
+	@media (max-width: 669px) {
+		 @content
+	}
+}
+
+@mixin mobile_small {
+	@media (max-width: 600px) {
+		@content
+	}
+}
+
+#bg_init { background: url("../res/bg.png") !important; }
+
 body {
-	display: flex;
-	flex-direction: column;
+	@include flexbox(column, none);
 	min-height: 100vh;
 
 	background: #f0f0f0;
@@ -45,7 +72,7 @@ body {
 @import 'welcome';
 
 // *************************************************
-// ************** Estilos la Web *******************
+// ************** Estilos de la Web ***************
 // *************************************************
 
 #fullpage {
@@ -92,9 +119,7 @@ body {
 
 			.description_me {
 				@include caption_all;
-				font-family: $raleway;
-				font-weight: 300;
-				text-align: center;
+				@extend .name_me;
 			}
 
 			.skills_me {
@@ -115,6 +140,22 @@ body {
 					color: #3E3E3E;
 					border: 1.5px solid #3E3E3E !important;
 				}
+
+				@include ipad {
+					width: 35%;
+				}
+
+				@include tablet {
+					width: 50%;
+				}
+
+				@include mobile {
+					width: 55%;
+				}
+
+				@include mobile_small {
+					width: 40%;
+				}
 			}
 
 			.icon-container {
@@ -125,9 +166,7 @@ body {
 					width: 100%;
 
 					.html5, .css3, .js, .sass {
-						width: 50px;
-						height: 50px;
-						border-radius: 50%;
+						@include skills_metrics;
 					}
 				}
 
@@ -136,9 +175,7 @@ body {
 					width: 100%;
 
 					.bootstrap, .materialize, .git {
-						width: 50px;
-						height: 50px;
-						border-radius: 50%;
+						@include skills_metrics;
 						margin: 5px 0px 0px 10px;
 					}
 				}
