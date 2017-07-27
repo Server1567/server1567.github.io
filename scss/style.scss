@@ -16,8 +16,6 @@ body {
 	@include flexbox(column, none);
 	min-height: 100vh;
 
-	background: #f0f0f0;
-
     // Create the parallax scrolling effect
     background-attachment: fixed;
     background-position: center;
@@ -101,16 +99,8 @@ body {
 					border: 1.5px solid #3E3E3E !important;
 				}
 
-				@include ipad {
-					width: 35%;
-				}
-
-				@include tablet {
-					width: 50%;
-				}
-
 				@include mobile {
-					width: 55%;
+					width: 40%;
 				}
 
 				@include mobile_small {

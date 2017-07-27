@@ -13,6 +13,7 @@ $(document).ready(function(){
 	});
 
 	$('#fullpage').fullpage({
-		sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE']
+		anchors:['Me', 'Portfolio', 'Contact'],
+		sectionsColor: ['#CFCFCF', '#4BBFC3', '#7BAABE']
 	});
 });
