@@ -1,0 +1,43 @@
+// ****** Mixins ******
+
+@mixin caption_all {
+	position: relative;
+	margin: 0px;
+	padding-bottom: 25px;
+}
+
+@mixin flexbox($xy, $select){
+	display: flex;
+	flex-direction: $xy;
+	justify-content: $select;
+}
+
+@mixin skills_metrics {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+@mixin ipad {
+	@media (max-width: 1024px) {
+		@content
+	}
+}
+
+@mixin tablet {
+	@media (max-width: 865px) {
+		@content
+	}
+}
+
+@mixin mobile {
+	@media (max-width: 669px) {
+		 @content
+	}
+}
+
+@mixin mobile_small {
+	@media (max-width: 600px) {
+		@content
+	}
+}
