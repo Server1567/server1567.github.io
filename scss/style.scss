@@ -79,6 +79,7 @@ body {
 			.description_me {
 				@include caption_all;
 				@extend .name_me;
+				padding-bottom: 0;
 			}
 
 			.skills_me {
