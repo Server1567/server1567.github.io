@@ -6,14 +6,16 @@ function fail() {
 
 $(document).ready(function(){
 
+	$('#fullpage').hide();
+
 	$('#letsgo').click(function(){
 		$('body').removeAttr("id");
-		$('#welcome').attr("class", "hide");
-		$('#fullpage').removeAttr("class");
+		$('#welcome').fadeOut(1000);
+		$('#fullpage').fadeIn(1000);
 	});
 
 	$('#fullpage').fullpage({
 		anchors:['Me', 'Portfolio', 'Contact'],
-		sectionsColor: ['#CFCFCF', '#4BBFC3', '#7BAABE']
+		sectionsColor: ['#CFCFCF', '#CFCFCF', '#CFCFCF']
 	});
 });
