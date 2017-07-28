@@ -47,7 +47,7 @@ body {
 			float: left;
 			@include flexbox(column, center);
 			align-items: center;
-			height: 100%;
+			height: 90%;
 
 			.responsive {
 				@include caption_all;
@@ -57,6 +57,7 @@ body {
 		}
 
 		.me {
+			height: 90%;
 			padding: 50px 50px 0px 50px;
 			@include flexbox(column, center); 
 			float: right;
@@ -87,27 +88,6 @@ body {
 				margin: auto;
 			}
 
-			.btn {
-				@include caption_all;
-				width: 30%;
-				align-self: center;
-				color: black;
-				border: 1.5px solid black !important;
-
-				&:hover {
-					color: #3E3E3E;
-					border: 1.5px solid #3E3E3E !important;
-				}
-
-				@include mobile {
-					width: 40%;
-				}
-
-				@include mobile_small {
-					width: 55%;
-				}
-			}
-
 			.icon-container {
 				@include caption_all;
 
@@ -130,11 +110,38 @@ body {
 					}
 				}
 			}
+
+			.btn {
+				@include caption_all;
+				width: 30%;
+				align-self: center;
+				color: black;
+				border: 1.5px solid black !important;
+
+				&:hover {
+					color: #3E3E3E;
+					border: 1.5px solid #3E3E3E !important;
+				}
+
+				@include mobile {
+					width: 40%;
+				}
+
+				@include mobile_small {
+					width: 55%;
+				}
+			}
+
+			
 		}
 
 		.portfolio-link {
 			@include caption_all;
+			padding-bottom: 0px !important;
+			height: 10%;
+			margin: auto;
 		}
+
 	}
 
 	.principal {
