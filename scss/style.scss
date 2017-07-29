@@ -158,9 +158,65 @@ body {
 	}
 
 	#second {
+
 		.slide {
-			height: 90%;
+
 		}
 	}
 
+}
+
+/* line 549, ../scss/styles.scss */
+ .fp-controlArrow {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  width: auto;
+  height: auto;
+  padding: 20px 30px 20px 30px;
+  opacity: 1;
+}
+/* line 557, ../scss/styles.scss */
+ .fp-controlArrow.fp-prev:hover,  .fp-controlArrow.fp-next:hover {
+  opacity: 0.5;
+  background-color: transparent;
+}
+/* line 562, ../scss/styles.scss */
+ .fp-controlArrow.fp-prev:before,  .fp-controlArrow.fp-next:before {
+  color: #202020;
+  display: block;
+  position: relative;
+  font-family: 'FontAwesome';
+  font-size: 38px;
+  line-height: auto;
+  content: "\f104";
+}
+/* line 573, ../scss/styles.scss */
+ .fp-controlArrow.fp-prev {
+  left: 0px;
+}
+/* line 575, ../scss/styles.scss */
+ .fp-controlArrow.fp-prev.fp-prev:before {
+  content: "\f104";
+}
+/* line 579, ../scss/styles.scss */
+ .fp-controlArrow.fp-next {
+  right: 0px;
+}
+/* line 581, ../scss/styles.scss */
+ .fp-controlArrow.fp-next.fp-next:before {
+  content: "\f105";
+}
+@media (max-width: 767px) {
+  /* line 549, ../scss/styles.scss */
+   .fp-controlArrow {
+    padding: 10px 15px 10px 15px;
+  }
+  /* line 587, ../scss/styles.scss */
+   .fp-controlArrow.fp-prev {
+    left: 0px;
+  }
+  /* line 590, ../scss/styles.scss */
+   .fp-controlArrow.fp-next {
+    right: 0px;
+  }
 }

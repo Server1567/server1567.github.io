@@ -14,7 +14,9 @@
 	<link rel="stylesheet" href="fonts/material-icons.css">
 	<link rel="stylesheet" href="js/fullPageJS/jquery.fullPage.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="shortcut icon" href="https://server1567.herokuapp.com/img/favicon.ico">
+	<link rel="shortcut icon" href="res/favicon.ico">
+
+	<script src="https://use.fontawesome.com/04c4453430.js"></script>
 </head>
 <body id="bg_init" class="fp-responsive">
 	
@@ -34,9 +36,9 @@
 
 <div id="fullpage" class="hide">
 
-			<!-- ********** -->
-			<!-- Section Me -->
-			<!-- ********** -->
+			<!-- ************** -->
+			<!-- * Section Me * -->
+			<!-- ************** -->
 
 	<div class="section" id="first">
 		<img data-src="res/image1.jpg" alt="Image" class="responsive-img principal">
@@ -70,13 +72,13 @@
 					</div>
 				</div>
 
-				<a href="#Contact" class="btn z-depth-0 transparent">Hire me</a>
+				<a onclick="contact()" class="btn z-depth-0 transparent">Hire me</a>
 
 			</div>
 
 			<!-- Portfolio Link -->
 			<div class="portfolio-link col s12">
-				<a class="btn-floating btn-tiny portfolio-icon-down" href="#Portfolio">
+				<a class="btn-floating btn-tiny portfolio-icon-down" onclick="down()">
 					<i class="large material-icons black">arrow_downward</i>
 				</a>
 			</div>
@@ -85,28 +87,25 @@
 	</div>
 
 
-			<!-- ***************** -->
-			<!-- Section Portfolio -->
-			<!-- ***************** -->
+			<!-- ********************* -->
+			<!-- * Section Portfolio * -->
+			<!-- ********************* -->
 	<div class="section" id="second">
-		<div class="slide">
-			<img src="res/developers.jpg" alt="DeveloperImage" class="responsive-img" style="width: 100%;">
+		<div class="slide" data-anchor="slide1">
+			<img src="res/portfolio_img/port1.png" alt="DeveloperImage" class="responsive-img" style="width: 100%;">
 		</div>
-		<div class="slide">
-			<img src="res/developers.jpg" alt="DeveloperImage" class="responsive-img" style="width: 100%;">
+		<div class="slide" data-anchor="slide2">
+			<img src="res/portfolio_img/port2.png" alt="DeveloperImage" class="responsive-img" style="width: 100%;">
 		</div>
-		<div class="slide">
-			<img src="res/developers.jpg" alt="DeveloperImage" class="responsive-img" style="width: 100%;">
-		</div>
-		<div class="slide">
-			<img src="res/developers.jpg" alt="DeveloperImage" class="responsive-img" style="width: 100%;">
+		<div class="slide" data-anchor="slide3">
+			<img src="res/portfolio_img/port3.png" alt="DeveloperImage" class="responsive-img" style="width: 100%;">
 		</div>
 	</div>
 
 
-			<!-- *************** -->
-			<!-- Section Contact -->
-			<!-- *************** -->
+			<!-- ******************* -->
+			<!-- * Section Contact * -->
+			<!-- ******************* -->
 	<div class="section" id="third">
 		
 	</div>

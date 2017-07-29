@@ -1,5 +1,13 @@
 // Uso de fullPage.JS
 
+function down(){
+	$.fn.fullpage.moveSectionDown();
+}
+
+function contact() {
+	$.fn.fullpage.moveTo('Contact');
+}
+
 $(document).ready(function(){
 
 	$('#fullpage').hide();
@@ -13,6 +21,14 @@ $(document).ready(function(){
 
 	$('#fullpage').fullpage({
 		anchors:['Me', 'Portfolio', 'Contact'],
-		sectionsColor: ['#CFCFCF', '#E3E3E3', '#CFCFCF']
+		sectionsColor: ['#CFCFCF', '#ECECEC', '#CFCFCF'],
+		showActiveTooltip: true,
+		slidesNavigation: true,
+		responsiveSlides: true,
+		parallax: true,
+		parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+
+		//Custom
+		slideSelector: '.slide',
 	});
 });
