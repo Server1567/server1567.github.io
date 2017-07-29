@@ -27,8 +27,6 @@ $(document).ready(function(){
 		responsiveSlides: true,
 		parallax: true,
 		parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
-
-		//Custom
 		slideSelector: '.slide',
 	});
 });
