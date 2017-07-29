@@ -1,9 +1,5 @@
 // Uso de fullPage.JS
 
-function fail() {
-	Materialize.toast("Espera men, esto aún no ha terminado.", 1500, 'rounded');
-}
-
 $(document).ready(function(){
 
 	$('#fullpage').hide();
@@ -11,11 +7,12 @@ $(document).ready(function(){
 	$('#letsgo').click(function(){
 		$('body').removeAttr("id");
 		$('#welcome').fadeOut(1000);
+		$('#fullpage').removeAttr("class");
 		$('#fullpage').fadeIn(1000);
 	});
 
 	$('#fullpage').fullpage({
 		anchors:['Me', 'Portfolio', 'Contact'],
-		sectionsColor: ['#CFCFCF', '#CFCFCF', '#CFCFCF']
+		sectionsColor: ['#CFCFCF', '#E3E3E3', '#CFCFCF']
 	});
 });
