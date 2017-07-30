@@ -21,7 +21,7 @@ $(document).ready(function(){
 
 	$('#fullpage').fullpage({
 		anchors:['Me', 'Portfolio', 'Contact'],
-		sectionsColor: ['#CFCFCF', '#ECECEC', '#CFCFCF'],
+		sectionsColor: ['#CFCFCF', '#ECECEC', '#ECECEC'],
 		showActiveTooltip: true,
 		slidesNavigation: true,
 		responsiveSlides: true,
@@ -29,4 +29,5 @@ $(document).ready(function(){
 		parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
 		slideSelector: '.slide',
 	});
+
 });
