@@ -248,21 +248,29 @@ body {
 			padding: 0 !important;
 		}
 
-		.content-section-3 {
-			font-family: $raleway;
-			font-weight: 300;
-			text-align: center;
+		.container-contact {
+			margin-bottom: 150px;
 
-			.col .brand {
-				margin: 10px;
-				cursor: pointer;
-				
-				&:hover {
-					filter: alpha(opacity=50);
-					opacity: 0.5;
-					-webkit-opacity: 0.5;
-					-moz-opacity: 0.5;
-					-o-opacity: 0.5;
+			@include mobile {
+				margin-bottom: 100px;
+			}
+
+			.content-section-3 {
+				font-family: $raleway;
+				font-weight: 300;
+				text-align: center;
+
+				.col .brand {
+					margin: 10px;
+					cursor: pointer;
+					
+					&:hover {
+						filter: alpha(opacity=50);
+						opacity: 0.5;
+						-webkit-opacity: 0.5;
+						-moz-opacity: 0.5;
+						-o-opacity: 0.5;
+					}
 				}
 			}
 		}
