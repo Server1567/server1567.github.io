@@ -7,16 +7,16 @@
 
 // Uso de fullPage.JS
 
-// function down(){
-// 	$.fn.fullpage.moveSectionDown();
-// }
-
-function contact() {
+function down(){
 	$.fn.fullpage.moveSectionDown();
 }
 
-$(document).ready(function(){
+function contact() {
+	$.fn.fullpage.moveTo('Contact');
+}
 
+$(document).ready(function(){
+	$('.modal').modal();
 	$('#fullpage').hide();
 
 	$('#letsgo').click(function(){
@@ -27,7 +27,7 @@ $(document).ready(function(){
 	});
 
 	$('#fullpage').fullpage({
-		anchors:['Me', 'Contact'],
+		anchors:['Me', 'Portfolio', 'Contact'],
 		sectionsColor: ['#CFCFCF', '#ECECEC', '#ECECEC'],
 		showActiveTooltip: true,
 		slidesNavigation: true,

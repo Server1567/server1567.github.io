@@ -45,6 +45,23 @@
 </head>
 <body id="bg_init" class="fp-responsive" onload="document.getElementById('cargando').style. display = 'none'">
 
+<!-- Modal for Project Details -->
+<div id="modal1" class="modal">
+	<div class="modal-content">
+		<h4>VideoClub</h4>
+		<p>
+			<strong>VideoClub</strong> is a web design project without any BackEnd functionality (design only) made to fulfill the need for a job assigned from <strong>APEC University (UNAPEC)</strong> to me. The idea consists of a website where movies can be rented for a certain time in which they have their rate, and the user can manage their rentals.
+		</p>
+		<p>
+			You can see the <em>code</em> for the entire project in its <strong>GitHub</strong> repository:
+			<a href="#" onclick="window.open('https://github.com/Server1567/VideoClub', '_blank');">https://github.com/Server1567/VideoClub</a>
+		</p>
+	</div>
+	<div class="modal-footer">
+		<a href="#" class="modal-close waves-effect blue btn" onclick="window.open('https://server1567.github.io/VideoClub/', '_blank');">See Project</a>
+	</div>
+</div>
+
 <!-- Loading -->
 
 <div class="progress" id="cargando" style="margin: 0 !important;">
@@ -107,13 +124,13 @@
 
 			</div>
 
-			<!-- Portfolio Link
+			 <!-- Portfolio Link -->
 			<div class="portfolio-link col s12">
 				<a class="btn-floating btn-tiny portfolio-icon-down" onclick="down()">
 					<i class="large material-icons black">arrow_downward</i>
 				</a>
 			</div>
-			-->
+			
 		</div>
 	</div>
 
@@ -121,31 +138,21 @@
 			<!-- ********************* -->
 			<!-- * Section Portfolio * -->
 			<!-- ********************* -->
-	<!--
+	
 	<div class="section" id="second">
 		<div class="slide" data-anchor="slide1">
+			
+
 			<h3 class="title_project">
-				Title Project
-				<i class="material-icons small info_prj" style="margin-right: 50px;">info</i>
+				VideoClub
+				<a href="#modal1" class="modal-trigger">
+					<i class="material-icons small info_prj" style="margin-right: 50px;">info</i>
+				</a>
 			</h3>
-			<img src="res/portfolio_img/port1.png" alt="DeveloperImage" class="responsive-img" style="width: 100%; height: 100%;">
-		</div>
-		<div class="slide" data-anchor="slide2">
-			<h3 class="title_project">
-				Title Project
-				<i class="material-icons small info_prj" style="margin-right: 50px;">info</i>
-			</h3>
-			<img src="res/portfolio_img/port2.png" alt="DeveloperImage" class="responsive-img" style="width: 100%; height: 100%;">
-		</div>
-		<div class="slide" data-anchor="slide3">
-			<h3 class="title_project">
-				Title Project
-				<i class="material-icons small info_prj" style="margin-right: 50px;">info</i>
-			</h3>
-			<img src="res/portfolio_img/port3.png" alt="DeveloperImage" class="responsive-img" style="width: 100%; height: 100%;">
+			<img src="res/portfolio_img/port1.png" alt="VideoClub" class="responsive-img" style="width: 100%; height: 100%;">
 		</div>
 	</div>
-	-->
+	
 
 			<!-- ******************* -->
 			<!-- * Section Contact * -->
